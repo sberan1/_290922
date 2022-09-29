@@ -22,7 +22,29 @@ public class Auto {
         kraj = 'A';
     }
 
+    public void nastartovatAuto(){
+        jeNastartovane = true;
+    }
+    public String nastartovatAuto2(){
+        if (!jeNastartovane){
+        jeNastartovane = true;
+        return "nastartovano sefe";
+        }
+        else{
+            return "hele to nedelej";
+        }
+    }
 
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "pocetKol=" + pocetKol +
+                ", vyrobce='" + vyrobce + '\'' +
+                ", jeNastartovane=" + jeNastartovane +
+                ", barva='" + barva + '\'' +
+                ", kraj=" + kraj +
+                '}';
+    }
 
 
 }
